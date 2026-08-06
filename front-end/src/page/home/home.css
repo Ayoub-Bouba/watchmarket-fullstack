@@ -1,0 +1,19 @@
+
+
+
+
+
+
+.to_register{
+    margin-top: 8px;
+    text-align: center;
+
+}
+.to_register a{
+    text-decoration: none;
+    color: rgb(0, 89, 255);
+    transition: all 0.3s ease;
+}
+.to_register a:hover{
+    color: rgba(0, 89, 255, 0.61);
+}
