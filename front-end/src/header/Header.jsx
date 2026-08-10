@@ -7,33 +7,33 @@ import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Link } from "react-router-dom";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
-
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import "./header.css";
 export default function Header() {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar position="static" className="header">
         <Toolbar>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 2 ,display:"none"}}
+          <Typography
+            component={Link}
+            to="/"
+            className="logo"
+            variant="h6"
+            sx={{ flexGrow: 1 }}
           >
-            <MenuIcon />
-          </IconButton>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Timora
+            TIM<span>O</span>RA
           </Typography>
-          <Button sx={{mr:"20px"}} component={Link} to="/" color="inherit">
-            Home
-          </Button>
-          <Button sx={{mr:"20px"}} component={Link} to="/ptoduct" color="inherit">
-            Product
-          </Button>
-          <IconButton component={Link} to="/login"  aria-label="login" color="black">
-            <AccountCircleIcon />
-          </IconButton>
+
+          <div className="my_links">
+            <Link to="/">Home</Link>
+            <Link to="/product">Product</Link>
+            <Link to="/cart">
+              <ShoppingCartIcon />
+            </Link>
+            <Link to="/login">
+              <AccountCircleIcon />
+            </Link>
+          </div>
         </Toolbar>
       </AppBar>
     </Box>

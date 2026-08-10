@@ -1,17 +1,121 @@
-.watch-bg-container {
-  position: absolute;
-  top: 0;
-  left: 0;
+.container{
+   width: 100%;
+   height: 100vh;
+   
+}
+
+.container .img_hero{
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  object-fit: cover;
+}
+.content{
+  position: absolute;
+  top: 45%;
+  left: 100px;
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: -1;
-  overflow: hidden;
+  flex-direction: column;
+  gap: 5px;
+  
 }
 
-.watch-part {
-  position: absolute;
-  max-width: 40%;
+.content h3{
+  margin-bottom: 12px;
+  color: #f1dd28bb;
 }
+.content p{
+  margin-bottom: 12px;
+}
+.content .btn{
+  background-color: rgba(0, 255, 255, 0.034);
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.content .btn:hover{
+  background-color: rgba(0, 255, 255, 0.288);
+
+}
+/*footer*/
+.sec_footer{
+  background-color: #000000ce;
+}
+.content_footer{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 50px;
+  height: 500px;
+}
+.content_footer .f1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+.content_footer .f2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 50px;
+}
+.content_footer h2{
+  color: #f1dd28bb;
+  font-size: 22px;
+  font-weight: 500;
+}
+.content_footer .f1 .logo_con{
+  text-align: start;
+  width: 48%;
+}
+.content_footer .f1 .logo_con p{
+  max-width: 400px;
+  margin-top: 10px;
+  color: #6b6b68c9;
+}
+.content_footer .con span{
+  color: #6b6b68c9;
+
+}
+.content_footer .f1 .shop{
+  text-align: start;
+  width: 48%;
+}
+.content_footer .con{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.content_footer .f2 .company{
+  text-align: start;
+  width: 48%;
+}
+.content_footer .f2 .follow{
+  text-align: start;
+  width: 48%;
+}
+
+.footer-bottom{
+  max-width:1200px;
+  margin:0 auto;
+  padding:15px 0;
+  border-top:1px solid rgba(32, 29, 16, 0.568);
+  display:flex;
+  justify-content:space-between;
+  color: #757171f5;
+  font-size:0.8rem;
+}
+
+
+
+

@@ -3,7 +3,7 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "./assets/vite.svg";
 import heroImg from "./assets/hero.png";
 import "./App.css";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useParams } from "react-router-dom";
 
 import NoPage from "./component/NoPage";
 import Header from "./header/Header";
@@ -11,27 +11,31 @@ import Protected from "./component/Protected";
 import Login from "./page/home/Login";
 import Home from "./page/home/Home";
 import Register from "./page/home/Register";
-
+import Product from "./page/product/Product";
+import ProductDetails from "./page/product/ProductDetails";
+import Cart from "./page/cart/Cart";
+import { ToastContainer } from "react-toastify";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <div>
+    <div className="app">
+      <ToastContainer position="top-center" autoClose={3000} />
       <Header />
       <Routes>
         <Route
           path="/"
           element={
             <Protected>
-              <Home/>
+              <Home />
             </Protected>
           }
         ></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/register" element={<Register />}></Route>
+        <Route path="/product" element={<Product />}></Route>
+        <Route path="/product/:id" element={<ProductDetails />}></Route>
+        <Route path="/cart" element={<Cart />}></Route>
         <Route path="*" element={<NoPage />}></Route>
-
       </Routes>
     </div>
   );

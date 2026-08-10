@@ -1,18 +1,36 @@
-import { useEffect, useRef, useState } from "react";
-import "./home.css"
-import WatchAssembleBg from "../../component/WatchAssembleBg";
+import MyheroSection from "../../component/MyheroSection";
+import "./home.css";
+import Newsletter from "./Newsletter";
+import Footer from "../../component/Footer";
+import ProductCard from "../../component/ProductCard";
+import { useEffect, useState } from "react";
+import axios from "axios";
 function Home() {
-  const [offsetY, setOffsetY] = useState(0);
-
+  const [product, setProduct] = useState([]);
   useEffect(() => {
-    const handleScroll = () => setOffsetY(window.scrollY);
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    const fetchProduct = async () => {
+      try {
+        const res = await axios.get("http://localhost:3000/product");
+        setProduct(res.data);
+      } catch (err) {
+        console.error("problime", err);
+      }
+    };
+    fetchProduct();
   }, []);
-
   return (
     <div className="home-hero">
-      <WatchAssembleBg/>
+      <MyheroSection />
+      <div className="section_product">
+        <div className="containe_pro">
+          <h5 className="shop">SHOP</h5>
+          <h2>Best Sellers</h2>
+          <p>The pieces our customers keep comming back for</p>
+          <ProductCard product={product}/>
+        </div>
+      </div>
+      <Newsletter />
+      <Footer />
     </div>
   );
 }

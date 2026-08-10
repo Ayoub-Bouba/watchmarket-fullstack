@@ -1,0 +1,18 @@
+{
+  "cart": [
+    {
+      "id": 1,
+      "name": "Watch A",
+      "price": 150,
+      "image": "/image/imgProduct/prd1.png",
+      "inStock": false
+    },
+    {
+      "id": 3,
+      "name": "Watch C",
+      "price": 150,
+      "image": "/image/imgProduct/prd3.jpg",
+      "inStock": true
+    }
+  ]
+}

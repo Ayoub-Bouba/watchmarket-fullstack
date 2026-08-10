@@ -1,0 +1,47 @@
+.header{
+    position: fixed;
+    background-color: rgba(31, 31, 31, 0.747) !important;
+    overflow:visible;
+}
+.header .icon_login{
+    color: aliceblue ;
+    background-color: #c9a227 ;
+}
+.my_links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 20%;
+}
+.my_links a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #eee0c5ec;
+    transition: all 0.3s ease-in-out;
+    padding: 4px;
+    position: relative;
+
+}
+.my_links a:hover::after{
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 2px;
+    bottom: 0px;
+    left: 5px;
+    background-color: #fcb423ec;
+}
+.my_links a:hover{
+    color: #fcb423ec;
+}
+.logo{
+  font-family:'Cormorant Garamond', serif;
+  font-size:1.5rem;
+  font-weight:600;
+  letter-spacing:0.06em;
+  color:#eee0c5ec; /* var(--cream) */
+}
+.logo span{
+  color:#c9a227; /* var(--gold) */
+}

@@ -1,9 +1,5 @@
 
-
-
-
-
-
+/*register*/
 .to_register{
     margin-top: 8px;
     text-align: center;
@@ -16,4 +12,117 @@
 }
 .to_register a:hover{
     color: rgba(0, 89, 255, 0.61);
+}
+/*section_product*/
+.section_product{
+    background-color: #000000c7;
+    
+}
+.section_product .containe_pro{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    gap: 20px;
+    
+
+}
+.section_product .containe_pro .shop{
+  color: #f1dd28a9;
+
+}
+.section_product .containe_pro h2{
+  color: #e6e3c8ea;
+
+}
+.section_product .containe_pro p{
+    margin-bottom: 30px;
+    color: #757171f5;
+}
+.section_product .product_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.section_product .prod{
+    min-width: 270px;
+    max-width:  270px;
+    width: 23%;
+    background-color: #4b635f41;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.3);
+   
+}
+.section_product .prod:hover{
+    scale: 1.008;
+    border: solid 1px #f1dd28a9;
+}
+.section_product .prod h6{
+  color: #f1dd28a9;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.section_product .prod img{
+   display: block;
+   margin: auto;
+   width: 95%;
+   height: 230px;
+   border-radius: 6px;
+   margin-bottom: 8px;
+   object-fit: cover;
+   
+}
+.section_product .prod h4{
+    margin: 5px 0;
+  color: #e6e3c8ea;
+}
+.section_product .prod h5{
+    color: #757171f5;
+}
+.product_content #no_found{
+    border-top: solid 1px rgb(250, 247, 247) ;
+    color: rgb(250, 247, 247) ;
+    padding-top: 20px;
+    width: 500px;
+    text-align: center;
+}
+/*newsletter*/
+.newsletter{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #181a10c9;
+}
+.newsletter h3{
+   font-size: 26px;
+    color: #ecdbdbf5;
+}
+.newsletter p{
+    color: #a79e9ef5;
+    font-size: 14;
+}
+.newsletter form input{
+    padding: 8px 14px;
+    color: #a79e9ef5;
+    border: solid 1px #f1dd28a9;
+    background-color:#2b36327e ;
+    outline: none;
+}
+.newsletter form button{
+    padding: 8px 14px;
+    color: #a79e9ef5;
+    background-color:#f1dd28a9;
+    border: solid 1px #f1dd28a9;
+    color: #ecdbdbf5;
+    outline: none;
 }
