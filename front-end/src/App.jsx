@@ -7,7 +7,6 @@ import { Route, Routes, useParams } from "react-router-dom";
 
 import NoPage from "./component/NoPage";
 import Header from "./header/Header";
-import Protected from "./component/Protected";
 import Login from "./page/home/Login";
 import Home from "./page/home/Home";
 import Register from "./page/home/Register";
@@ -25,9 +24,9 @@ function App() {
         <Route
           path="/"
           element={
-            <Protected>
+            
               <Home />
-            </Protected>
+            
           }
         ></Route>
         <Route path="/login" element={<Login />}></Route>

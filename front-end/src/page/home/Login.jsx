@@ -66,22 +66,22 @@ const styles = {
     justifyContent: "center",
     alignItems: "center",
     minHeight: "90vh",
-    backgroundColor: "#f4f6f8",
+    backgroundColor: "#29261d62",
     direction: "rtl",
     fontFamily: "sans-serif",
   },
   card: {
-    backgroundColor: "#fff",
+    backgroundColor: "#3a3232a2",
     padding: "30px",
     borderRadius: "10px",
-    boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)",
+    boxShadow: "0 4px 12px rgba(0, 0, 0, 0.32)",
     width: "100%",
     maxWidth: "380px",
   },
   title: {
     textAlign: "center",
     marginBottom: "20px",
-    color: "#333",
+    color: "#f5f5f5e8",
   },
   inputGroup: {
     marginBottom: "15px",
@@ -89,7 +89,7 @@ const styles = {
   label: {
     display: "block",
     marginBottom: "6px",
-    color: "#666",
+    color: "#f5f5f5e8",
     fontSize: "14px",
   },
   input: {
