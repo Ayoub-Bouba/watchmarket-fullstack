@@ -31,14 +31,14 @@ export default function Header() {
             TIM<span>O</span>RA
           </Typography>
           {active=="active" ? "" :(
-            <Link onClick={handleActive}><DehazeIcon sx={{
+            <div className="mobile" onClick={handleActive}><DehazeIcon sx={{
               color:"white"
             }}
-            fontSize="medium" /></Link>
+            fontSize="medium" /></div>
           )}
           <div className={`my_links ${active}`}>
             {active=="active" ? (
-               <div onClick={handleActive}><CloseIcon fontSize="medium"/></div>
+               <div className="mobile" onClick={handleActive}><CloseIcon fontSize="medium"/></div>
             ) :""}
             <Link to="/">Home</Link>
             <Link to="/product">Product</Link>

@@ -45,12 +45,18 @@
 .logo span{
   color:#c9a227; /* var(--gold) */
 }
+.mobile{
+    display: none;
+}
 @media (min-width:641px) and (max-width:1024px){
     .my_links{
        width: 40%;
     }
 }
 @media (max-width:640px){
+    .mobile{
+        display: initial;
+    }
     .my_links{
        width: 40%;
        flex-direction: column;
