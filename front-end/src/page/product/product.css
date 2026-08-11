@@ -127,3 +127,36 @@
     background-color: #fff;
 
 }
+@media (min-width:641px) and ((max-width:1024px)){
+    .pro_details .sec_img .big_img img{
+      width: 300px;
+    }
+    .pro_details .sec_img .small_img{
+      width: 300px;
+    }  
+    .pro_details .pro_content{
+    
+    position: relative;
+    top: 20px;
+    bottom: 0px;
+    width: 100%;
+}
+}
+@media (max-width:640px) {
+    .pro_details{
+        flex-direction: column;
+    }
+    .pro_details .sec_img .big_img img{
+      width: 300px;
+    }
+    .pro_details .sec_img .small_img{
+      width: 300px;
+    }  
+    .pro_details .pro_content{
+    
+    position: relative;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+}
+}

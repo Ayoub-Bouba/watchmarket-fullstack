@@ -85,9 +85,7 @@ function ProductDetails() {
           <p className="desc">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias,
             nulla veritatis, error illo, vitae atque unde rerum nihil dolor
-            blanditiis nesciunt alias nostrum tempore sunt modi minus ipsa nam
-            officia. Ipsum quis cumque facilis assumenda. Commodi aliquam optio
-            laborum a.
+            blanditiis 
           </p>
           <div className="btn">
             <button id="btn1" onClick={handleSave}>

@@ -13,6 +13,13 @@
       "price": 150,
       "image": "/image/imgProduct/prd3.jpg",
       "inStock": true
+    },
+    {
+      "id": 2,
+      "name": "Watch B",
+      "price": 150,
+      "image": "/image/imgProduct/prd2.jpg",
+      "inStock": false
     }
   ]
 }

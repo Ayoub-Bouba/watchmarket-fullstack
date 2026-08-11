@@ -115,3 +115,22 @@
     fill: #fff;
     font-size: 25px;
 }
+@media (min-width:641px) and ((max-width:1024px)){
+    .cart_container .sec_hero .logo{
+      font-size: 2rem;
+      font-weight: 600;
+    }
+    .cart_container .sec_hero h2{
+      font-size: 1.3rem;
+      font-weight: 400;
+    }
+    .cart_container .sec_hero p{
+      font-size: 0.8rem;
+      max-width: 400px;
+    }
+    .table .cart .cart_img #img{
+      width: 180px;
+      min-width: 180px;
+      min-height: 190px;
+    }
+}

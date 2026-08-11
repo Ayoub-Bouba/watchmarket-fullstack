@@ -9,10 +9,17 @@ import { Link } from "react-router-dom";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import "./header.css";
+import DehazeIcon from '@mui/icons-material/Dehaze';
+import { useState } from "react";
+import CloseIcon from '@mui/icons-material/Close';
 export default function Header() {
+  const [active,setActive]=useState("")
+  const handleActive=()=>{
+    setActive(active=="active" ? "" : "active")
+  }
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" className="header">
+      <AppBar position="static" className={`header`}>
         <Toolbar>
           <Typography
             component={Link}
@@ -23,8 +30,16 @@ export default function Header() {
           >
             TIM<span>O</span>RA
           </Typography>
-
-          <div className="my_links">
+          {active=="active" ? "" :(
+            <Link onClick={handleActive}><DehazeIcon sx={{
+              color:"white"
+            }}
+            fontSize="medium" /></Link>
+          )}
+          <div className={`my_links ${active}`}>
+            {active=="active" ? (
+               <div onClick={handleActive}><CloseIcon fontSize="medium"/></div>
+            ) :""}
             <Link to="/">Home</Link>
             <Link to="/product">Product</Link>
             <Link to="/cart">
