@@ -126,3 +126,22 @@
     color: #ecdbdbf5;
     outline: none;
 }
+@media (max-width:640px){
+    
+.newsletter h3{
+    font-size: 20px;
+}
+.newsletter p{
+    
+    font-size: 12px;
+    width: 300px;
+}
+.newsletter form input{
+    padding: 6px 12px;
+    
+    
+}
+.newsletter form button{
+    padding: 6px 12px;
+}
+}

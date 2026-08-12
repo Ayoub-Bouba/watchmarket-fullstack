@@ -135,12 +135,12 @@
 @media (max-width:640px){
    .container{
       width: 100%;
-      height: 50vh;
+      height: 35vh;
     }
     .container .content{
       position: absolute;
       top: 19%;
-      left: 0px;
+      left: 10px;
     }
     .content h5{
       font-size: 7px;
@@ -155,6 +155,25 @@
       padding: 4px 10px;
       border-radius: 6px;
       font-size: 10px;
+    }
+    .content_footer h2{
+      font-size: 18px;
+      font-weight: 600;
+    }
+    .content_footer .con span{
+      font-size: 14px;
+    }
+    .content_footer .f1 .logo_con .logo{
+      font-size: 18px;
+    }
+    .content_footer .f1 .logo_con p{
+      font-size: 14px;
+    }
+    .footer-bottom{
+      width: 370px;
+    }
+    .content_footer{
+      height: 420px;
     }
 }
 

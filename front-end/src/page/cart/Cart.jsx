@@ -10,7 +10,7 @@ function Cart() {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const res = await axios.get("http://localhost:3005/cart");
+        const res = await axios.get("https://6a7b345a8c69b3eb4a17f8bd.mockapi.io/api/cart");
         setCart(res.data);
       } catch (err) {
         console.error("problime", err);
@@ -20,7 +20,7 @@ function Cart() {
   }, []);
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:3005/cart/${id}`);
+      await axios.delete(`https://6a7b345a8c69b3eb4a17f8bd.mockapi.io/api/cart/${id}`);
       setCart(cart.filter((item)=>item.id!==id))
     } catch (err) {
       console.error("problime", err);
@@ -55,10 +55,6 @@ function Cart() {
                   <h4>{item.price} dh</h4>
                   <input
                     type="number"
-                    style={{
-                      padding: "6px 12px",
-                      width: "60px",
-                    }}
                     aria-label="QTY"
                   />
                 </div>

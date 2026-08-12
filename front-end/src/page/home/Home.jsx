@@ -10,7 +10,7 @@ function Home() {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const res = await axios.get("http://localhost:3000/product");
+        const res = await axios.get("https://6a7b345a8c69b3eb4a17f8bd.mockapi.io/api/product");
         setProduct(res.data);
       } catch (err) {
         console.error("problime", err);

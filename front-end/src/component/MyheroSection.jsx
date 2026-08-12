@@ -14,7 +14,7 @@ function MyheroSection() {
             <button className="btn">Shop Now</button>
           </Link>
         </div>
-        <img className="img_hero" src="/image/slideImage/img3.jpg"  />
+        <img className="img_hero" src="/image/slideImage/img.jpg"  />
       </div>
     </div>
   );

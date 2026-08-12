@@ -88,6 +88,8 @@
     .active{
        right: 0;
        display: initial;
+       overflow: hidden;
+       z-index: 10;
     }
     
 }
